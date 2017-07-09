@@ -130,38 +130,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(550,300)" to="(630,300)"/>
     <wire from="(270,240)" to="(270,360)"/>
     <wire from="(270,240)" to="(340,240)"/>
-    <comp lib="1" loc="(340,360)" name="NOT Gate"/>
-    <comp lib="1" loc="(550,300)" name="OR Gate"/>
+    <comp lib="6" loc="(635,276)" name="Text">
+      <a name="text" val="SUM: AB' +A'B"/>
+    </comp>
     <comp lib="0" loc="(230,280)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(230,240)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
     </comp>
     <comp lib="0" loc="(630,300)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="6" loc="(635,276)" name="Text">
-      <a name="text" val="SUM: AB' +A'B"/>
+    <comp lib="1" loc="(550,300)" name="OR Gate"/>
+    <comp lib="1" loc="(420,370)" name="AND Gate">
+      <a name="label" val="A'B"/>
     </comp>
     <comp lib="0" loc="(630,190)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="COUT: AB"/>
     </comp>
-    <comp lib="1" loc="(310,280)" name="NOT Gate"/>
+    <comp lib="1" loc="(340,360)" name="NOT Gate"/>
     <comp lib="1" loc="(540,190)" name="AND Gate">
       <a name="label" val="AB"/>
     </comp>
     <comp lib="1" loc="(420,260)" name="AND Gate">
       <a name="label" val="AB'"/>
     </comp>
-    <comp lib="1" loc="(420,370)" name="AND Gate">
-      <a name="label" val="A'B"/>
+    <comp lib="0" loc="(230,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
     </comp>
+    <comp lib="1" loc="(310,280)" name="NOT Gate"/>
   </circuit>
   <circuit name="FA_1">
     <a name="circuit" val="FA_1"/>
@@ -206,25 +206,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(530,210)" to="(600,210)"/>
     <wire from="(210,210)" to="(280,210)"/>
     <wire from="(200,300)" to="(460,300)"/>
-    <comp lib="1" loc="(200,290)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="label" val="AB"/>
-    </comp>
-    <comp lib="1" loc="(410,180)" name="AND Gate">
-      <a name="label" val="XABC"/>
-    </comp>
-    <comp lib="0" loc="(130,160)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="0" loc="(130,210)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="1" loc="(530,210)" name="OR Gate"/>
-    <comp lib="1" loc="(430,100)" name="XOR Gate">
-      <a name="label" val="XABXC"/>
-    </comp>
     <comp lib="1" loc="(340,230)" name="XOR Gate">
       <a name="label" val="XAB"/>
     </comp>
@@ -234,14 +215,33 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="SUM"/>
     </comp>
-    <comp lib="0" loc="(290,160)" name="Pin">
+    <comp lib="1" loc="(410,180)" name="AND Gate">
+      <a name="label" val="XABC"/>
+    </comp>
+    <comp lib="1" loc="(530,210)" name="OR Gate"/>
+    <comp lib="0" loc="(130,160)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="Cin"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(130,210)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
     <comp lib="0" loc="(600,210)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Cout"/>
+    </comp>
+    <comp lib="0" loc="(290,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Cin"/>
+    </comp>
+    <comp lib="1" loc="(430,100)" name="XOR Gate">
+      <a name="label" val="XABXC"/>
+    </comp>
+    <comp lib="1" loc="(200,290)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="label" val="AB"/>
     </comp>
   </circuit>
   <circuit name="FA_4">
@@ -251,22 +251,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
       <path d="M191,122 Q217,154 240,122" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="124" stroke="#000000" stroke-width="2" width="135" x="147" y="121"/>
+      <rect fill="none" height="123" stroke="#000000" stroke-width="2" width="130" x="150" y="121"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="160" y="136">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="160" y="146">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="161" y="156">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="161" y="166">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="173" y="272">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="173" y="282">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="172" y="293">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="172" y="306">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="173" y="318">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="183" y="328">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="182" y="316">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="182" y="303">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="183" y="292">A</text>
       <circ-port height="8" pin="90,500" width="8" x="146" y="236"/>
-      <circ-port height="8" pin="100,410" width="8" x="146" y="126"/>
-      <circ-port height="8" pin="230,410" width="8" x="146" y="136"/>
-      <circ-port height="8" pin="100,430" width="8" x="146" y="186"/>
-      <circ-port height="8" pin="230,430" width="8" x="146" y="196"/>
-      <circ-port height="8" pin="340,410" width="8" x="146" y="146"/>
-      <circ-port height="8" pin="340,430" width="8" x="146" y="206"/>
-      <circ-port height="8" pin="490,410" width="8" x="146" y="156"/>
-      <circ-port height="8" pin="490,430" width="8" x="146" y="216"/>
-      <circ-port height="10" pin="190,370" width="10" x="275" y="135"/>
+      <circ-port height="8" pin="100,410" width="8" x="146" y="156"/>
+      <circ-port height="8" pin="230,410" width="8" x="146" y="146"/>
+      <circ-port height="8" pin="100,430" width="8" x="146" y="216"/>
+      <circ-port height="8" pin="230,430" width="8" x="146" y="186"/>
+      <circ-port height="8" pin="340,410" width="8" x="146" y="136"/>
+      <circ-port height="8" pin="340,430" width="8" x="146" y="196"/>
+      <circ-port height="8" pin="490,410" width="8" x="146" y="126"/>
+      <circ-port height="8" pin="490,430" width="8" x="146" y="206"/>
+      <circ-port height="10" pin="190,370" width="10" x="275" y="165"/>
       <circ-port height="10" pin="300,370" width="10" x="275" y="155"/>
-      <circ-port height="10" pin="420,370" width="10" x="275" y="175"/>
-      <circ-port height="10" pin="570,370" width="10" x="275" y="195"/>
+      <circ-port height="10" pin="420,370" width="10" x="275" y="145"/>
+      <circ-port height="10" pin="570,370" width="10" x="275" y="135"/>
       <circ-port height="10" pin="600,450" width="10" x="275" y="225"/>
-      <circ-anchor facing="east" height="6" width="6" x="177" y="117"/>
+      <circ-anchor facing="east" height="6" width="6" x="277" y="227"/>
     </appear>
     <wire from="(410,450)" to="(500,450)"/>
     <wire from="(90,450)" to="(120,450)"/>
@@ -290,20 +303,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(300,370)" to="(300,400)"/>
     <wire from="(190,370)" to="(190,400)"/>
     <wire from="(290,450)" to="(360,450)"/>
-    <comp lib="0" loc="(100,430)" name="Pin">
+    <comp loc="(170,400)" name="FA_1"/>
+    <comp lib="0" loc="(100,410)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
+      <a name="label" val="A0"/>
     </comp>
-    <comp lib="0" loc="(90,500)" name="Pin">
-      <a name="facing" val="north"/>
+    <comp loc="(550,400)" name="FA_1"/>
+    <comp lib="0" loc="(190,370)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="CIN"/>
-      <a name="labelloc" val="south"/>
+      <a name="label" val="S0"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp loc="(290,400)" name="FA_1"/>
     <comp lib="0" loc="(230,410)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A1"/>
+    </comp>
+    <comp lib="0" loc="(340,410)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+    </comp>
+    <comp lib="0" loc="(420,370)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(100,430)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
     </comp>
     <comp lib="0" loc="(600,450)" name="Pin">
       <a name="facing" val="west"/>
@@ -312,46 +343,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="COUT"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(340,410)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A2"/>
-    </comp>
-    <comp lib="0" loc="(340,430)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
-    </comp>
-    <comp loc="(410,400)" name="FA_1"/>
-    <comp loc="(170,400)" name="FA_1"/>
-    <comp lib="0" loc="(420,370)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp loc="(550,400)" name="FA_1"/>
-    <comp lib="6" loc="(325,283)" name="Text">
-      <a name="text" val="Full Adder"/>
-      <a name="font" val="SansSerif plain 22"/>
-    </comp>
     <comp lib="0" loc="(490,430)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B3"/>
     </comp>
-    <comp lib="0" loc="(190,370)" name="Pin">
+    <comp lib="0" loc="(570,370)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="S0"/>
+      <a name="label" val="S3"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(410,400)" name="FA_1"/>
+    <comp lib="6" loc="(325,283)" name="Text">
+      <a name="text" val="Full Adder"/>
+      <a name="font" val="SansSerif plain 22"/>
     </comp>
     <comp lib="0" loc="(230,430)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B1"/>
-    </comp>
-    <comp lib="0" loc="(100,410)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
     </comp>
     <comp lib="0" loc="(300,370)" name="Pin">
       <a name="facing" val="south"/>
@@ -364,16 +374,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="A3"/>
     </comp>
-    <comp lib="0" loc="(570,370)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(340,430)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="S3"/>
-      <a name="labelloc" val="north"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="0" loc="(90,500)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CIN"/>
+      <a name="labelloc" val="south"/>
     </comp>
   </circuit>
-  <circuit name="4-Bit Increment">
-    <a name="circuit" val="4-Bit Increment"/>
+  <circuit name="INC_4">
+    <a name="circuit" val="INC_4"/>
     <a name="clabel" val="INC_4"/>
     <a name="clabelup" val="north"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
@@ -419,6 +432,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(600,340)" to="(600,420)"/>
     <wire from="(440,310)" to="(510,310)"/>
     <wire from="(300,310)" to="(370,310)"/>
+    <comp lib="6" loc="(308,229)" name="Text">
+      <a name="text" val="4-Bit Increment Schematic"/>
+    </comp>
+    <comp lib="0" loc="(350,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(210,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+      <a name="labelloc" val="south"/>
+    </comp>
     <comp lib="0" loc="(620,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -426,52 +452,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="COUT"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(180,420)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
+    <comp loc="(300,310)" name="HA_1"/>
+    <comp lib="0" loc="(70,310)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="S0"/>
-      <a name="labelloc" val="south"/>
+      <a name="label" val="CIN"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(460,420)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="label" val="S2"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp loc="(300,310)" name="HA_1"/>
-    <comp lib="0" loc="(350,330)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A2"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp loc="(440,310)" name="HA_1"/>
-    <comp lib="0" loc="(70,330)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="6" loc="(308,229)" name="Text">
-      <a name="text" val="4-Bit Increment Schematic"/>
-    </comp>
-    <comp loc="(160,310)" name="HA_1"/>
-    <comp lib="0" loc="(490,330)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp loc="(580,310)" name="HA_1"/>
-    <comp lib="0" loc="(70,310)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="CIN"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(600,420)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S3"/>
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(320,420)" name="Pin">
@@ -481,9 +472,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="S1"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(210,330)" name="Pin">
+    <comp lib="0" loc="(70,330)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="A1"/>
+      <a name="label" val="A0"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(490,330)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp loc="(580,310)" name="HA_1"/>
+    <comp lib="0" loc="(180,420)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S0"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp loc="(160,310)" name="HA_1"/>
+    <comp loc="(440,310)" name="HA_1"/>
+    <comp lib="0" loc="(600,420)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S3"/>
       <a name="labelloc" val="south"/>
     </comp>
   </circuit>
@@ -512,38 +525,40 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(420,520)" to="(420,580)"/>
     <wire from="(460,520)" to="(460,580)"/>
     <wire from="(510,490)" to="(550,490)"/>
-    <comp lib="0" loc="(260,330)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(460,580)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(265,295)" name="Text">
-      <a name="text" val="PASS’/2’sCOMP "/>
     </comp>
     <comp lib="1" loc="(310,500)" name="XOR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(240,470)" name="Pin">
+    <comp lib="0" loc="(240,430)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(240,510)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="1" loc="(310,460)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(400,580)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(460,580)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(240,510)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(310,420)" name="XOR Gate">
+    <comp lib="1" loc="(310,380)" name="XOR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(240,430)" name="Pin">
+    <comp lib="6" loc="(265,295)" name="Text">
+      <a name="text" val="PASS’/2’sCOMP "/>
+    </comp>
+    <comp lib="0" loc="(550,490)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(440,580)" name="Pin">
@@ -551,27 +566,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(310,380)" name="XOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(240,470)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp loc="(510,490)" name="4-Bit Increment"/>
-    <comp lib="1" loc="(310,460)" name="XOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(240,390)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
+    <comp loc="(510,490)" name="INC_4"/>
     <comp lib="0" loc="(420,580)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(550,490)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(260,330)" name="Pin">
+      <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(240,390)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="1" loc="(310,420)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="MUX_1">
@@ -603,19 +616,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(220,140)" to="(240,140)"/>
     <wire from="(220,210)" to="(240,210)"/>
     <comp lib="1" loc="(220,160)" name="NOT Gate"/>
-    <comp lib="1" loc="(380,170)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="0" loc="(220,140)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(270,150)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(440,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(270,190)" name="AND Gate">
+    <comp lib="1" loc="(270,150)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
@@ -624,12 +637,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="B"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(440,170)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="1" loc="(270,190)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(380,170)" name="OR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(170,180)" name="Pin">
       <a name="tristate" val="false"/>
@@ -662,27 +675,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(140,270)" to="(210,270)"/>
     <wire from="(140,340)" to="(210,340)"/>
     <wire from="(140,130)" to="(210,130)"/>
-    <comp lib="0" loc="(300,340)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(200,360)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
-    </comp>
-    <comp lib="6" loc="(248,73)" name="Text">
-      <a name="text" val="MUX_4 A/B' = 0, A = 12, B = 7"/>
-      <a name="font" val="SansSerif plain 22"/>
-    </comp>
-    <comp lib="0" loc="(140,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S"/>
-      <a name="labelloc" val="north"/>
-    </comp>
+    <comp loc="(280,340)" name="MUX_1"/>
+    <comp loc="(280,200)" name="MUX_1"/>
     <comp lib="0" loc="(300,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -690,29 +684,59 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Y1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(200,310)" name="Pin">
+    <comp lib="0" loc="(200,150)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="B1"/>
+      <a name="label" val="A3"/>
     </comp>
-    <comp lib="0" loc="(200,290)" name="Pin">
+    <comp lib="0" loc="(200,240)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="A1"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="0" loc="(140,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(200,220)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="A2"/>
     </comp>
+    <comp lib="0" loc="(200,310)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(300,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(300,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(280,130)" name="MUX_1"/>
     <comp lib="0" loc="(200,170)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="B3"/>
     </comp>
-    <comp lib="0" loc="(200,380)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
+    <comp lib="6" loc="(248,73)" name="Text">
+      <a name="text" val="MUX_4 A/B' = 0, A = 12, B = 7"/>
+      <a name="font" val="SansSerif plain 22"/>
     </comp>
-    <comp lib="0" loc="(200,240)" name="Pin">
+    <comp lib="0" loc="(200,290)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
+      <a name="label" val="A1"/>
+    </comp>
+    <comp loc="(280,270)" name="MUX_1"/>
+    <comp lib="0" loc="(200,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
     </comp>
     <comp lib="0" loc="(300,200)" name="Pin">
       <a name="facing" val="west"/>
@@ -721,20 +745,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Y2"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(280,270)" name="MUX_1"/>
-    <comp lib="0" loc="(200,150)" name="Pin">
+    <comp lib="0" loc="(200,380)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
-    </comp>
-    <comp loc="(280,130)" name="MUX_1"/>
-    <comp loc="(280,340)" name="MUX_1"/>
-    <comp loc="(280,200)" name="MUX_1"/>
-    <comp lib="0" loc="(300,130)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y3"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="B0"/>
     </comp>
   </circuit>
   <circuit name="DEMUX_1">
@@ -766,12 +779,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(270,280)" to="(270,320)"/>
     <wire from="(310,260)" to="(310,300)"/>
     <wire from="(250,280)" to="(270,280)"/>
+    <comp lib="0" loc="(290,240)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="I"/>
+    </comp>
+    <comp lib="6" loc="(430,271)" name="Text">
+      <a name="text" val="I = IN"/>
+    </comp>
     <comp lib="0" loc="(380,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(350,270)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(313,191)" name="Text">
       <a name="text" val="1-Bit Demultiplexer SOP Form"/>
@@ -780,14 +805,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(459,290)" name="Text">
       <a name="text" val="S = Switch (A/B')"/>
     </comp>
-    <comp lib="0" loc="(250,280)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="S"/>
-    </comp>
-    <comp lib="1" loc="(350,270)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="0" loc="(380,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -795,18 +812,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(250,280)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+    </comp>
     <comp lib="1" loc="(370,310)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
       <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="0" loc="(290,240)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="I"/>
-    </comp>
-    <comp lib="6" loc="(430,271)" name="Text">
-      <a name="text" val="I = IN"/>
     </comp>
   </circuit>
   <circuit name="DEMUX_4">
@@ -865,10 +878,40 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,160)" to="(230,160)"/>
     <wire from="(190,300)" to="(230,300)"/>
     <wire from="(190,230)" to="(230,230)"/>
+    <comp lib="0" loc="(300,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(190,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D3"/>
+    </comp>
     <comp lib="0" loc="(210,370)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A|B"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(290,90)" name="DEMUX_1"/>
+    <comp lib="0" loc="(190,300)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D0"/>
+    </comp>
+    <comp lib="0" loc="(300,190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(300,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(300,160)" name="Pin">
@@ -878,34 +921,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A2"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(290,90)" name="DEMUX_1"/>
-    <comp lib="0" loc="(190,300)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="D0"/>
-    </comp>
     <comp lib="0" loc="(190,160)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="D2"/>
-    </comp>
-    <comp loc="(290,300)" name="DEMUX_1"/>
-    <comp loc="(290,160)" name="DEMUX_1"/>
-    <comp lib="0" loc="(300,120)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(300,190)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(190,90)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="D3"/>
     </comp>
     <comp lib="0" loc="(300,230)" name="Pin">
       <a name="facing" val="west"/>
@@ -914,9 +932,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(190,230)" name="Pin">
+    <comp lib="0" loc="(300,300)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="D1"/>
+      <a name="label" val="A0"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(300,90)" name="Pin">
       <a name="facing" val="west"/>
@@ -925,12 +946,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A3"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(300,330)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+    <comp loc="(290,230)" name="DEMUX_1"/>
+    <comp loc="(290,160)" name="DEMUX_1"/>
+    <comp lib="0" loc="(190,230)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="B0"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="D1"/>
     </comp>
     <comp lib="0" loc="(300,260)" name="Pin">
       <a name="facing" val="west"/>
@@ -939,13 +959,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="B1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(290,230)" name="DEMUX_1"/>
-    <comp lib="0" loc="(300,300)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
+    <comp loc="(290,300)" name="DEMUX_1"/>
+  </circuit>
+  <circuit name="Add_Subt">
+    <a name="circuit" val="Add_Subt"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
   </circuit>
 </project>
