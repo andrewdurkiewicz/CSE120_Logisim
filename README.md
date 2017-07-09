@@ -1,1 +1,1 @@
-# CSE120_Logisim-
+In progress circuit results for software labwork in CSE 120. 
